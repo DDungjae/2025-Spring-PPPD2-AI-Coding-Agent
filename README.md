@@ -22,13 +22,6 @@ Findings: a single LLM frequently violates constraints. The agentic system produ
 ## Suggested repository structure
 Top-level files: README, agents, graphs for orchestration, benchmarks with a HumanEval runner, a vrptw module containing data, solver, and evaluation, and scripts for running benchmarks and the case study.
 
-## Quick start
-Step 1. Install dependencies with your package manager using the provided requirements file.
-Step 2. Run HumanEval with the multi-agent setting and your chosen model.
-Example command: python benchmarks/humaneval_runner.py --agent multi --model gpt-4o-mini
-Step 3. Solve a VRPTW instance.
-Example command: python vrptw/solver.py --instance vrptw/data/sample.json
-
 ## Results summary
 — Higher solution rate and code quality than a single LLM on HumanEval.
 — Better constraint awareness on VRPTW through agent coordination.
@@ -37,5 +30,3 @@ Example command: python vrptw/solver.py --instance vrptw/data/sample.json
 #Limitations and future work
 #The VRPTW heuristic is not guaranteed to be optimal. Future work includes stronger routing policies, more reliable constraint handling, improved tool use, and automatic unit-test synthesis inside the loop.
 
-#Acknowledgments
-#Course: PPPD (Programming in the AI Era), 2025-1. This README summarizes the team’s final presentation.
