@@ -23,10 +23,11 @@ Findings: a single LLM frequently violates constraints. The agentic system produ
 Top-level files: README, agents, graphs for orchestration, benchmarks with a HumanEval runner, a vrptw module containing data, solver, and evaluation, and scripts for running benchmarks and the case study.
 
 ## Results summary
+AI agent showed higher performance comparing to singular LLM.
 — Higher solution rate and code quality than a single LLM on HumanEval.
 — Better constraint awareness on VRPTW through agent coordination.
 — Reduced human intervention due to the reflect–repair loop.
 
-#Limitations and future work
-#The VRPTW heuristic is not guaranteed to be optimal. Future work includes stronger routing policies, more reliable constraint handling, improved tool use, and automatic unit-test synthesis inside the loop.
+## Limitations and future work
+The VRPTW heuristic is not guaranteed to be optimal. Future work includes stronger routing policies, more reliable constraint handling, improved tool use, and automatic unit-test synthesis inside the loop.
 
